@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bookshelf Apps</title>
+		<link rel="shortcut icon" href="assets/image/bookshelf.png" alt="bookshelf-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+<body>
+	<header>
+		<div class="header-box">
+			<h1>Bookshelf Apps</h1>
+		</div>
+	</header>
+
+	<main>
+		<div id="content">
+			<article class="content-input">
+				<section class="input_section" id="inputSection">
+					<h2 id="h2InputSection">Masukkan Buku Baru</h2>
+					<form id="inputBook">
+						<div class="input" id="sectionTitle">
+							<label for="inputBookTitle">Judul</label>
+							<input id="inputBookTitle" type="text" placeholder="Masukkan Judul Buku"/>
+							<small class="error-display" id="errorTitle">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionAuthor">
+							<label for="inputBookAuthor">Penulis</label>
+							<input id="inputBookAuthor" type="text" placeholder="Masukkan Nama Penulis Buku"/>
+							<small class="error-display" id="errorAuthor">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionYear">
+							<label for="inputBookYear">Tahun</label>
+							<input id="inputBookYear" type="number" placeholder="Masukkan Tahun Terbit Buku"/>
+							<small class="error-display" id="errorYear">Wajib Diisi</small>
+						</div>
+						<div class="input_inline">
+							<label for="inputBookIsComplete">Selesai Dibaca</label>
+							<input id="inputBookIsComplete" type="checkbox" />
+						</div>
+						<button id="bookSubmit" type="button">
+						<span>Masukkan Buku</span></button>
+					</form>
+				</section>
+			</article>
+            
+            <article class="content-search">
+				<section class="search_section" id="searchSection">
+					<h2 id="searchSectionH2">Cari Buku</h2>
+					<form id="searchBook">
+						<label for="searchBookTitle">Pencarian</label>
+                        <div class ="position">
+                            <input id="searchBookTitle" type="text" placeholder="Pencarian Data"/>
+						    <button id="searchSubmit" type="submit">
+						    <span>Cari</span></button>
+                        </div>
+					</form>
+					<div id="searchResult" class="book_list" style="width: 100%"></div>
+				</section>
+			</article>
+		</div>
+			
+		<aside>
+            <article class="content-done">
+				<section class="book_shelf" id="bookShelfUncompleted">
+					<h2 id="uncompletedH2">Belum Selesai Dibaca</h2>
+				
+					<div id="incompleteBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+
+			<article class="content-notDone">
+				<section class="book_shelf" id="bookShelfCompleted">
+					<h2 id="completedH2">Selesai Dibaca</h2>
+				
+					<div id="completeBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+		</aside>
+	</main>
+
+	<footer>
+		<div id="closing">Belajar Membuat Front-End Web Untuk Pemula &#169; 2021 Dicoding Academy</div>
+	</footer>
+
+	<script src="assets/javascript/main.js"></script>
+	<script src="assets/javascript/insert.js"></script>
+    <script src="assets/javascript/delete.js"></script>
+	<script src="assets/javascript/search.js"></script>
+	<script src="assets/javascript/swap.js"></script>
+
+</body>
+</html>

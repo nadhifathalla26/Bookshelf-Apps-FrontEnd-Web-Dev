@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}  
+  
+body {
+	font-family: "Quicksand", sans-serif;
+}
+  
+input, button {
+	font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+  
+header {
+	display: inline;
+}
+  
+.header-box {
+	padding: 80px;
+    background-color: #00548c;
+	color: white;
+    overflow: auto;
+}
+
+h1 {
+	text-align: center;
+    font-size: 50px;
+    overflow: visible;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+	overflow: auto;
+	background-color: white;
+    padding: 20px;
+}
+  
+*#content {
+	max-width: 100%;
+	max-height: 100%;
+	overflow: auto;
+	margin: 0 auto;
+	float: left;
+	width: 50%;
+	padding: 20px;
+	place-items: center;
+}
+  
+aside {
+	float: right;
+	width: 50%;
+	padding: 20px;
+}
+  
+.content-input{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    background-color: #78bdeb;
+    padding: 20px;
+    margin: 20px;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+  
+.content-search{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    background-color: #78bdeb;
+    padding: 20px;
+    margin: 20px;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+  
+.content-done{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    background-color: #78bdeb;
+    padding: 20px;
+    margin: 20px;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+  
+.content-notDone{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    background-color: #78bdeb;
+    padding: 20px;
+    margin: 20px;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+  
+.input_section > h2 {
+	padding-top: 20px;
+	text-align: center;
+	color:black;
+}
+  
+.input_section > #inputBook {
+	padding: 16px;
+}
+  
+.input_section > form > .input {
+	margin: 8px 0;
+}
+  
+.input_section > form > button {
+	background: #00548c;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	padding: 8px;
+	cursor: pointer;
+}
+  
+.input_section > form > button:hover {
+	border: 2px rgb(0, 225, 255) solid;
+}
+  
+.input_section > form > button > span {
+	font-weight: bold;
+}
+  
+.input_section > form > .input > input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+    border-color: #78bdeb;
+    border-style: solid;   
+}
+  
+.input_section > form > .input > label {
+	color:black;
+	font-weight: bold;
+}
+  
+.input_section > form > .input_inline {
+	margin: 12px 0;
+	display: flex;
+	align-items: center;
+}
+  
+.input_section > form > .input_inline > label {
+	color:black;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.position {
+    display: grid;
+	grid-template-columns: auto 1fr 0.5fr;
+	grid-gap: 10px;  
+}
+
+.search_section > h2 {
+	padding-top: 20px;
+	color:black;
+}
+  
+.search_section > form {
+	padding: 16px;
+	width: 100%;
+}
+  
+.search_section > form > label {
+	display: flex;
+	align-items: center;
+}
+
+.search_section > form > .position > input {
+	padding: 5px;
+	border-radius: 5px;
+    width: 100%;
+    border-color: #78bdeb;
+    border-style: solid;  
+}
+
+.search_section > form > .position > button {
+	background:#00548c;
+	border: 2px black solid;
+	color: white;
+    font-weight: bold;
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	cursor: pointer;
+    width: 100%;
+    padding: 8px;
+}
+
+.search_section > form > button > .position > span {
+    color: white;
+	font-weight: bold;
+    margin-top: 50px;
+
+}
+  
+.search_section > form > .position > button:hover {
+	border: 2px rgb(0, 225, 255) solid;
+}
+  
+.search_section > form > label {
+	color:black;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#searchResult {
+    color: black;
+}
+
+.search {
+    color: black;
+}
+
+.book_shelf > h2 {
+	padding-top: 20px;
+	color:black;
+}
+  
+.book_shelf > .book_list {
+	padding: 16px;
+}
+  
+.book_shelf > .book_list > .book_item {
+	padding: 8px 16px 16px 16px;
+	border: 1px solid #00548c;
+	border-radius: 5px;
+	margin: 10px 0;
+    background-color: #00548c;
+}
+  
+.book_shelf > .book_list > .book_item > h3, p {
+	margin: 8px 0;
+	overflow: hidden;
+	word-wrap: break-word;
+    color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > button {
+	border: 0;
+	padding: 5px;
+	margin: 0 5px 0 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+  
+.book_shelf > .book_list > .book_item > .ket > span{
+	padding: 5px 5px 5px 5px;
+	background: linear-gradient(-45deg, rgba(43, 81, 112),rgb(7, 146, 65));
+	font-size: 14px;
+	border-radius: 5px;
+	max-height: 100%;
+	width: 100%;
+	color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .search {
+	/* margin-bottom: 25px; */
+	padding: 5px 5px 5px 5px;
+	background: linear-gradient(-45deg, rgba(43, 81, 112),rgb(221, 32, 11));
+	font-size: 14px;
+	border-radius: 5px;
+	max-height: 100%;
+	width: 100%;
+	color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .green {
+	background-color: green;
+	border: 0;
+	color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .red {
+	background: red;
+	border: 0;
+	color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+	border: 1px rgb(0, 255, 42) solid;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+	border: 1px rgb(255, 17, 0) solid;
+}
+  
+.error {
+	border: 2px solid red;
+}
+  
+.error-display {
+	display: none;
+}
+  
+footer {
+	padding: 30px;
+	color: white;
+    background-color: #00548c;
+	text-align: center;
+	font-weight: bold;
+}
+
+#closing {
+    color: white;
+}
+  
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.text {
+		font-size: 11px
+	}
+}
